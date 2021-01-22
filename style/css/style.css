@@ -1,0 +1,243 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #EDF0F2;
+}
+
+.container {
+  display: flex;
+}
+
+.container .posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .posts .post {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .posts .post .post-img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .posts .post .post-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .posts .post .post-text .key-skills {
+  color: #E4003B;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.container .posts .post .post-text h5 {
+  margin: 0;
+}
+
+.container .more {
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: "Teko", sans-serif;
+  color: #E4003B;
+  text-transform: uppercase;
+  font-size: 17.6rem;
+  line-height: 0.8;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "Teko", sans-serif;
+  font-size: 9.6rem;
+}
+
+h3 {
+  font-family: "Adevale", sans-serif;
+  font-size: 5.5rem;
+}
+
+h4 {
+  font-family: "Teko", sans-serif;
+  font-size: 6rem;
+}
+
+h5 {
+  font-family: "Teko", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.navbar__list li {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.header__element--left {
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
+}
+
+.header__container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__text {
+  font-family: "Teko", sans-serif;
+  font-size: 5.5rem;
+  padding: 2rem;
+  margin-top: 26rem;
+  margin-left: -18rem;
+  text-align: center;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
+.header__social {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-left: -22rem;
+}
+
+.header__social ul {
+  list-style-type: none;
+}
+
+.header__social ul li {
+  padding: 10px;
+}
+
+.header__container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header__container-right h1 {
+  margin-left: -18rem;
+}
+
+.header__container-right p {
+  padding: 20px;
+  line-height: 1.7;
+  background-image: url("./../../img/header-arrow.svg");
+  background-repeat: no-repeat;
+  min-width: 400px;
+}
+
+.header__element--right {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+}
+
+.header__hero {
+  position: relative;
+}
+
+.header__img {
+  width: 85rem;
+  margin-left: -10rem;
+}
+
+.header__right-bottom {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.header__pages {
+  margin-top: 20rem;
+  margin-right: 0;
+}
+
+.header__pages--list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: right;
+}
+
+.header__pages--list li {
+  margin-bottom: 2rem;
+}
+
+.header__pages--list li a {
+  font-family: "Teko", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+.header__pages--list .this-page {
+  border-bottom: 0.2rem solid #E4003B;
+  font-size: 5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  display: block;
+  margin-left: 5rem;
+}
+
+.navbar__nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar__nav #vl {
+  border-left: .2rem solid black;
+  height: 1.8rem;
+}
+/*# sourceMappingURL=style.css.map */

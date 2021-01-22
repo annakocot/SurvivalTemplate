@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+
+    &__element--left {
+        display: flex;
+        flex-direction: row;
+        width: 30vw;
+    }
+
+    &__container-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__text {
+        font-family: $primary-font;
+        font-size: 5.5rem;
+        padding: 2rem;
+        margin-top: 26rem;
+        margin-left: -18rem;
+
+
+        text-align: center;
+        transform: rotate(-90deg);
+        white-space: nowrap;
+    }
+
+    &__social {
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+        margin-left: -22rem;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                padding: 10px;
+            }
+        }
+    }
+
+    &__container-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h1 {
+            margin-left: -18rem;
+        }
+
+        p {
+            padding: 20px;
+            line-height: 1.7;
+            background-image: url('./../../img/header-arrow.svg');
+            background-repeat: no-repeat;
+
+            min-width: 400px;
+        }
+
+            // &:after {
+            //     content: '';
+            //     background-image: url('./../../img/header-arrow.svg');
+            //     background-repeat: no-repeat;
+            //     background-size: contain;
+            //     position: absolute;
+            //     bottom: 0;
+            //     right: 0;
+            //     display: flex;
+            // }
+        }
+
+
+        &__element--right {
+            display: flex;
+            flex-direction: row;
+            width: 50vw;
+        }
+
+        &__hero {
+            position: relative;
+        }
+
+        &__img {
+            width: 85rem;
+            margin-left: -10rem;
+
+        }
+
+        &__right-bottom {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+
+    &__pages {
+
+        margin-top: 20rem;
+        margin-right: 0;
+
+        &--list {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            text-align: right;
+
+            li {
+                margin-bottom: 2rem;
+
+                a {
+                    font-family: $primary-font;
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: $primary-color;
+                }
+            }
+
+            .this-page {
+                border-bottom: .2rem solid $danger_color;
+                font-size: 5rem;
+            }
+        }
+    }
+}

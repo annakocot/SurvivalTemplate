@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        display: block;
+        margin-left: 5rem;
+    }
+
+    &__nav{
+
+        a {
+
+            color: $primary-color;
+            text-decoration: none;
+        }
+
+        #vl {
+            border-left: .2rem solid black;
+            height: 1.8rem;
+        }
+    }
+}
+

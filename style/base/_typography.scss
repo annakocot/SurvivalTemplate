@@ -1,0 +1,38 @@
+h1{
+    font-family: $primary-font;
+    color: $danger-color;
+    text-transform: uppercase;
+    font-size: $font-size-xxl;
+    line-height: 0.8;
+    font-weight: 500;
+}
+
+h2{
+    font-family: $primary-font;
+    font-size: $font-size-large;
+}
+
+h3{
+    font-family: $secondary-font;
+    font-size: $font-size-medium;
+}
+
+h4{
+    font-family: $primary-font;
+    font-size: $font-size-big;
+}
+
+h5{
+    font-family: $primary-font;
+    font-size: $font-size-normal;
+    font-weight: 500;
+}
+
+h6{
+    font-family: $primary-font;
+    font-size: $font-size-small;
+}
+
+p{
+    font-family: $thrietary-font;
+}

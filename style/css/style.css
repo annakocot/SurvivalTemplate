@@ -1,3 +1,360 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -42,24 +399,44 @@ body {
 }
 
 .container .more {
-  font-family: "Teko", sans-serif;
-  font-size: 1.7rem;
+  font-family: #000;
+  font-size: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-h1 {
-  font-family: "Teko", sans-serif;
-  color: #E4003B;
-  text-transform: uppercase;
-  font-size: 17.6rem;
-  line-height: 0.8;
-  font-weight: 500;
+@font-face {
+  font-family: 'icons';
+  src: url("../../assets/icons/icons.ttf") format("truetype"), url("../../assets/icons/icons.woff") format("woff"), url("../../assets/icons/icons.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
-h2 {
-  font-family: "Teko", sans-serif;
-  font-size: 9.6rem;
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--arrow-right::before {
+  content: "\ea3c";
+}
+
+.icon--arrow-down::before {
+  content: "\ea3e";
+}
+
+.icon--arrow-left::before {
+  content: "\ea40";
 }
 
 h3 {
@@ -69,7 +446,7 @@ h3 {
 
 h4 {
   font-family: "Teko", sans-serif;
-  font-size: 6rem;
+  font-size: 5.3rem;
 }
 
 h5 {
@@ -80,11 +457,18 @@ h5 {
 
 h6 {
   font-family: "Teko", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 p {
   font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.u-container {
+  max-width: 116.6rem;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
 .navbar__list {
@@ -94,7 +478,7 @@ p {
   align-items: center;
   font-weight: 600;
   font-family: "Teko", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #000;
   text-transform: uppercase;
 }
@@ -108,38 +492,67 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin: 2rem 2rem 10rem 2rem;
   position: relative;
 }
 
-.header__element--left {
+.header__slide {
   display: flex;
-  flex-direction: row;
-  width: 30vw;
-}
-
-.header__container-left {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
+}
+
+.header__description {
+  display: block;
+  margin: 0 2rem 0 8rem;
   position: relative;
 }
 
-.header__text {
+.header__description::after {
+  content: '';
+  background-image: url("../../img/ico_art.png");
+  background-size: contain;
+  width: 9rem;
+  height: 13rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1rem;
+  z-index: -1;
+}
+
+.header__heading-primary {
   font-family: "Teko", sans-serif;
-  font-size: 5.5rem;
-  padding: 2rem;
-  margin-top: 26rem;
-  margin-left: -18rem;
-  text-align: center;
+  color: #E4003B;
+  font-size: 16rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 20rem;
+  line-height: .7;
+  margin-top: 7rem;
+}
+
+.header__heading-secondary {
+  color: #000;
+  font-family: "Teko", sans-serif;
+  font-size: 5.3rem;
+  font-weight: 500;
   transform: rotate(-90deg);
-  white-space: nowrap;
+  position: absolute;
+  top: 19.5rem;
+  left: -19rem;
+}
+
+.header__info-box {
+  display: block;
 }
 
 .header__social {
   text-align: center;
   font-size: 2rem;
   padding: 1rem;
-  margin-left: -22rem;
+  margin-left: -32rem;
+  margin-top: 3.8rem;
+  cursor: pointer;
 }
 
 .header__social ul {
@@ -150,75 +563,66 @@ p {
   padding: 10px;
 }
 
-.header__container-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.header__paragraph {
+  max-width: 23rem;
+  margin-top: -18rem;
+  line-height: 2;
 }
 
-.header__container-right h1 {
-  margin-left: -18rem;
-}
-
-.header__container-right p {
-  padding: 20px;
-  line-height: 1.7;
-  background-image: url("./../../img/header-arrow.svg");
-  background-repeat: no-repeat;
-  min-width: 400px;
-}
-
-.header__element--right {
-  display: flex;
-  flex-direction: row;
-  width: 50vw;
-}
-
-.header__hero {
-  position: relative;
-}
-
-.header__img {
-  width: 85rem;
-  margin-left: -10rem;
-}
-
-.header__right-bottom {
-  display: flex;
-  flex-direction: column;
+.pages {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 20rem;
+  right: -5rem;
 }
 
-.header__pages {
-  margin-top: 20rem;
-  margin-right: 0;
-}
-
-.header__pages--list {
-  list-style-type: none;
+.pages__list {
+  list-style: none;
   display: flex;
   flex-direction: column;
   align-content: center;
   text-align: right;
 }
 
-.header__pages--list li {
+.pages__item {
   margin-bottom: 2rem;
-}
-
-.header__pages--list li a {
   font-family: "Teko", sans-serif;
   font-size: 1.7rem;
   font-weight: 600;
   text-decoration: none;
-  color: #000;
+  cursor: pointer;
 }
 
-.header__pages--list .this-page {
+.pages__item--active {
   border-bottom: 0.2rem solid #E4003B;
   font-size: 5rem;
+}
+
+.photo {
+  position: relative;
+  width: 75rem;
+  height: 58rem;
+  background: url("../../img/banner.svg");
+  background-size: cover;
+  margin-right: auto;
+}
+
+.photo__arrows {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.photo__arrow {
+  display: block;
+  font-size: 1.6rem;
+  padding: 1rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.photo__arrow--active {
+  color: #fff;
+  background: #E4003B;
 }
 
 .navbar {
@@ -228,7 +632,6 @@ p {
 
 .navbar__logo {
   display: block;
-  margin-left: 5rem;
 }
 
 .navbar__nav a {
@@ -237,7 +640,7 @@ p {
 }
 
 .navbar__nav #vl {
-  border-left: .2rem solid black;
+  border-left: 0.2rem solid #000;
   height: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */

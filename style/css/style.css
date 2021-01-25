@@ -634,6 +634,10 @@ p {
   display: block;
 }
 
+.navbar__logo img {
+  width: 90%;
+}
+
 .navbar__nav a {
   color: #000;
   text-decoration: none;

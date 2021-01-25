@@ -64,25 +64,23 @@
         margin-left: -32rem;
         margin-top: 3.8rem;
         cursor: pointer;
-
-        ul {
-            list-style-type: none;
-
-            li {
-                padding: 10px;
-            }
-        }
     }
+
+    &__social-list    {
+            list-style: none;
+    }
+
+    &__social-list-item {
+                padding: 1rem;
+            }
+    }
+
 
     &__paragraph {
         max-width: 23rem;
         margin-top: -18rem;
         line-height: 2;
     }
-    }
-
-
-
 
 .pages {
     position: absolute;

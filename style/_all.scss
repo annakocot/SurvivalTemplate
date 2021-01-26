@@ -3,12 +3,13 @@
 @import 'base/base';
 @import 'base/colors';
 @import 'base/fonts';
-@import 'base/main';
 @import 'base/icons';
 @import 'base/typography';
 @import 'base/utilities';
 
 @import 'components/lists';
 
+@import 'layout/challenges';
 @import 'layout/header';
 @import 'layout/nav';
+@import 'layout/main';

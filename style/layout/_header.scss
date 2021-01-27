@@ -79,14 +79,24 @@
         margin-top: -18rem;
         line-height: 2;
     }
+
+    &__photo {
+        position: relative;
+        width: 75rem;
+        height: 58rem;
+        background: url('../../img/banner.svg');
+        background-size: cover;
+        margin-right: auto;
+    }
+
+    &__pages {
+        position: absolute;
+        top: 20rem;
+        right: -5rem;
+    }
 }
 
 .pages {
-    position: absolute;
-    top: 20rem;
-    right: -5rem;
-
-
     &__list {
         list-style: none;
         display: flex;
@@ -111,13 +121,6 @@
 }
 
 .photo {
-    position: relative;
-    width: 75rem;
-    height: 58rem;
-    background: url('../../img/banner.svg');
-    background-size: cover;
-    margin-right: auto;
-
     &__arrows {
         position: absolute;
         right: 0;

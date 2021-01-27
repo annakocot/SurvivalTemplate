@@ -518,6 +518,16 @@ p {
   left: 0;
 }
 
+.advice__pages {
+  background: #EDF0F2;
+  height: 7rem;
+  width: 7rem;
+  padding: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .challenges {
   display: flex;
   flex-direction: row;
@@ -744,7 +754,16 @@ p {
   line-height: 2;
 }
 
-.pages {
+.header__photo {
+  position: relative;
+  width: 75rem;
+  height: 58rem;
+  background: url("../../img/banner.svg");
+  background-size: cover;
+  margin-right: auto;
+}
+
+.header__pages {
   position: absolute;
   top: 20rem;
   right: -5rem;
@@ -770,15 +789,6 @@ p {
 .pages__item--active {
   border-bottom: 0.2rem solid #E4003B;
   font-size: 5rem;
-}
-
-.photo {
-  position: relative;
-  width: 75rem;
-  height: 58rem;
-  background: url("../../img/banner.svg");
-  background-size: cover;
-  margin-right: auto;
 }
 
 .photo__arrows {

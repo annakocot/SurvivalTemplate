@@ -12,7 +12,6 @@
         position: absolute;
         top: 20rem;
         left: -10rem;
-
     }
 
     &__photo {
@@ -63,5 +62,15 @@
             top: -2rem;
             left: 0;
         }
+    }
+
+    &__pages {
+        background: $background-color;
+        height: 7rem;
+        width: 7rem;
+        padding: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }

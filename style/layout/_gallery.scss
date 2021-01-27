@@ -1,0 +1,94 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 68rem 2rem;
+
+    &__image {
+        width: 35rem;
+        height: 35rem;
+        position: relative;
+
+        &--1 {
+            background: url('../../img/img_tent.svg') no-repeat;
+            background-size: cover;
+            background-position: left bottom;
+        }
+
+        &--2 {
+            background: url('../../img/img_tea.svg') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    &__heading {
+        position: relative;
+    }
+
+    &__heading-primary {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 10rem;
+        color: $color-black;
+        text-transform: uppercase;
+        margin-left: 1.5rem;
+    }
+
+    &__heading-secondary {
+        font-family: $secondary-font;
+        font-size: 4.8rem;
+        color: $color-primary;
+        position: absolute;
+        transform: rotate(-20deg);
+        top: 5rem;
+        right: -2rem;
+    }
+
+    &__description {
+        font-size: $font-size-xs;
+        line-height: 2;
+        margin: 4rem 0;
+        max-width: 30rem;
+    }
+
+    &__morebox {
+        position: relative;
+    }
+
+    &__more-link {
+        @include more-link-style;
+    }
+}
+
+.image {
+    position: relative;
+
+    &__social {
+        font-size: 3rem;
+        color: $color-white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+    }
+
+    &__date-stamp {
+        font-size: $font-size-small;
+        font-family: $primary-font;
+        color: $color-white;
+        text-transform: uppercase;
+        position: absolute;
+        left: 2rem;
+        bottom: 8rem;
+    }
+
+    &__description {
+        font-size: 2.8rem;
+        font-family: $primary-font;
+        color: $color-white;
+        position: absolute;
+        left: 2rem;
+        bottom: 2rem;
+    }
+}

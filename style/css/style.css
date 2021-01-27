@@ -441,11 +441,81 @@ p {
   padding: 1rem;
 }
 
+.advice {
+  margin: 8rem 2rem;
+  position: relative;
+}
+
 .advice__heading {
   font-family: "Teko", sans-serif;
-  font-size: 12rem;
+  font-size: 15rem;
+  font-weight: 500;
   color: #E4003B;
+  text-transform: uppercase;
   transform: rotate(-90deg);
+  position: absolute;
+  top: 20rem;
+  left: -10rem;
+}
+
+.advice__photo {
+  background: url("../../img/tentman.svg") no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+  width: 100rem;
+  height: 50rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.advice__textbox {
+  background: #EDF0F2;
+  max-width: 35rem;
+  height: 20rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.advice__subheading {
+  font-family: "Teko", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.advice__description {
+  font-size: 1.2rem;
+  line-height: 2;
+  margin: 0 4rem 2rem 0;
+}
+
+.advice__morebox {
+  position: relative;
+}
+
+.advice__more-link {
+  font-family: "Teko", sans-serif;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 4rem;
+}
+
+.advice__more-link::before {
+  content: "+";
+  font-family: "Teko", sans-serif;
+  font-size: 5.5rem;
+  color: #E4003B;
+  display: inline-block;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -2rem;
+  left: 0;
 }
 
 .challenges {
@@ -539,7 +609,7 @@ p {
 }
 
 .challenges__photo {
-  background: url("../../img/img_man.svg");
+  background: url("../../img/img_man.svg") no-repeat;
   background-size: cover;
   background-position: 100%;
   width: 73rem;

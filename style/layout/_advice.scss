@@ -1,8 +1,67 @@
 .advice {
+    margin: 8rem 2rem;
+    position: relative;
+
     &__heading {
         font-family: $primary-font;
-        font-size: 12rem;
+        font-size: 15rem;
+        font-weight: 500;
         color: $color-primary;
+        text-transform: uppercase;
         transform: rotate(-90deg);
+        position: absolute;
+        top: 20rem;
+        left: -10rem;
+
+    }
+
+    &__photo {
+        background: url('../../img/tentman.svg') no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+        width: 100rem;
+        height: 50rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__textbox {
+        background: $background-color;
+        max-width: 35rem;
+        height: 20rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__subheading {
+        font-family: $primary-font;
+        font-size: $font-size-big;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 2rem 0;
+    }
+
+    &__description {
+        font-size: $font-size-xs;
+        line-height: 2;
+        margin: 0 4rem 2rem 0;
+    }
+
+    &__morebox {
+        position: relative;
+    }
+
+    &__more-link {
+        @include more-link-style;
+        margin-left: 4rem;
+
+        &::before {
+            @include more-symbol;
+            position: absolute;
+            top: -2rem;
+            left: 0;
+        }
     }
 }

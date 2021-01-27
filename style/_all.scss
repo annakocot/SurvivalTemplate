@@ -4,11 +4,13 @@
 @import 'base/colors';
 @import 'base/fonts';
 @import 'base/icons';
+@import 'base/mixins';
 @import 'base/typography';
 @import 'base/utilities';
 
 @import 'components/lists';
 
+@import 'layout/advice';
 @import 'layout/challenges';
 @import 'layout/header';
 @import 'layout/nav';

@@ -65,22 +65,12 @@
         position: relative;
     }
 
-    &__more {
-        font-family: $primary-font;
-        color: $color-black;
-        font-size: $font-size-small;
-        font-weight: 600;
-        text-decoration: none;
-        text-transform: uppercase;
+    &__more-link {
+        @include more-link-style;
         margin-left: 4rem;
 
         &::before {
-            content: "+";
-            font-family: $primary-font;
-            font-size: $font-size-big;
-            color: $color-primary;
-            display: inline-block;
-            transform: rotate(-45deg);
+            @include more-symbol;
             position: absolute;
             bottom: -2rem;
             left: 0;
@@ -88,7 +78,7 @@
     }
 
     &__photo {
-        background: url('../../img/img\ man.svg');
+        background: url('../../img/img_man.svg');
         background-size: cover;
         background-position: 100%;
         width: 73rem;
@@ -121,7 +111,7 @@
         margin-top: 3rem;
     }
 
-    &__see-more {
+    &__more-link-white {
         font-family: $primary-font;
         color: $color-white;
         font-size: $font-size-small;
@@ -132,12 +122,7 @@
 
 
         &::before {
-            content: "+";
-            font-family: $primary-font;
-            font-size: $font-size-big;
-            color: $color-primary;
-            display: inline-block;
-            transform: rotate(-45deg);
+           @include more-symbol;
             position: absolute;
             bottom: -2rem;
             left: 0;

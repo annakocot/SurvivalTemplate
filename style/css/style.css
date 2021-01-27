@@ -441,6 +441,13 @@ p {
   padding: 1rem;
 }
 
+.advice__heading {
+  font-family: "Teko", sans-serif;
+  font-size: 12rem;
+  color: #E4003B;
+  transform: rotate(-90deg);
+}
+
 .challenges {
   display: flex;
   flex-direction: row;
@@ -509,7 +516,7 @@ p {
   position: relative;
 }
 
-.challenges__more {
+.challenges__more-link {
   font-family: "Teko", sans-serif;
   color: #000;
   font-size: 1.5rem;
@@ -519,7 +526,7 @@ p {
   margin-left: 4rem;
 }
 
-.challenges__more::before {
+.challenges__more-link::before {
   content: "+";
   font-family: "Teko", sans-serif;
   font-size: 5.5rem;
@@ -532,7 +539,7 @@ p {
 }
 
 .challenges__photo {
-  background: url("../../img/img man.svg");
+  background: url("../../img/img_man.svg");
   background-size: cover;
   background-position: 100%;
   width: 73rem;
@@ -564,7 +571,7 @@ p {
   margin-top: 3rem;
 }
 
-.challenges__see-more {
+.challenges__more-link-white {
   font-family: "Teko", sans-serif;
   color: #fff;
   font-size: 1.5rem;
@@ -574,7 +581,7 @@ p {
   margin-left: 4rem;
 }
 
-.challenges__see-more::before {
+.challenges__more-link-white::before {
   content: "+";
   font-family: "Teko", sans-serif;
   font-size: 5.5rem;
@@ -913,7 +920,7 @@ p {
   margin-bottom: 2rem;
 }
 
-.mission__more {
+.mission__more-link {
   font-family: "Teko", sans-serif;
   color: #000;
   font-size: 1.5rem;
@@ -924,7 +931,7 @@ p {
   margin-left: 4rem;
 }
 
-.mission__more::before {
+.mission__more-link::before {
   content: "+";
   font-family: "Teko", sans-serif;
   font-size: 5.5rem;

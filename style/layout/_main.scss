@@ -73,21 +73,11 @@
     }
 
     &__more-link {
-        font-family: $primary-font;
-        color: $color-black;
-        font-size: $font-size-small;
-        font-weight: 600;
-        text-decoration: none;
-        text-transform: uppercase;
+       @include more-link-style;
         margin-left: 4rem;
 
         &::before {
-            content: "+";
-            font-family: $primary-font;
-            font-size: $font-size-big;
-            color: $color-primary;
-            display: inline-block;
-            transform: rotate(-45deg);
+          @include more-symbol;
             position: absolute;
             bottom: -2rem;
             left: 0;
@@ -165,13 +155,8 @@
         margin-bottom: 2rem;
     }
 
-    &__more {
-        font-family: $primary-font;
-        color: $color-black;
-        font-size: $font-size-small;
-        font-weight: 600;
-        text-decoration: none;
-        text-transform: uppercase;
+    &__more-link {
+        @include more-link-style;
         margin-bottom: 2rem;
         margin-left: 4rem;
 

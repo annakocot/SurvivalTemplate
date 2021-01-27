@@ -1,0 +1,8 @@
+.advice {
+    &__heading {
+        font-family: $primary-font;
+        font-size: 12rem;
+        color: $color-primary;
+        transform: rotate(-90deg);
+    }
+}

@@ -12,3 +12,14 @@ $font-size-normal: 3.6rem;
 $font-size-big: 5.5rem;
 $font-size-small: 1.5rem;
 $font-size-xs: 1.2rem;
+
+@font-face {
+    font-family: 'Adevale';
+    src:
+        url('../../assets/fonts/Adevale.ttf') format('truetype'),
+        url('../../assets/fonts/adevale-regular-webfont.woff') format('woff'),
+        url('../../assets/fonts/Adevale.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}

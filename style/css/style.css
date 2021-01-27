@@ -355,12 +355,28 @@ textarea {
   padding: 0.2em 0;
 }
 
+@font-face {
+  font-family: 'Adevale';
+  src: url("../../assets/fonts/Adevale.ttf") format("truetype"), url("../../assets/fonts/adevale-regular-webfont.woff") format("woff"), url("../../assets/fonts/Adevale.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
   background-color: #EDF0F2;
+}
+
+@font-face {
+  font-family: 'Adevale';
+  src: url("../../assets/fonts/Adevale.ttf") format("truetype"), url("../../assets/fonts/adevale-regular-webfont.woff") format("woff"), url("../../assets/fonts/Adevale.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 @font-face {
@@ -966,7 +982,7 @@ p {
   position: absolute;
   transform: rotate(-20deg);
   top: 7rem;
-  right: 6rem;
+  right: 5rem;
 }
 
 .mission__img {

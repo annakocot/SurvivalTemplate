@@ -1,0 +1,52 @@
+.footer {
+    background: url('../../img/img_footer.svg') no-repeat;
+    background-size: cover;
+    height: 25rem;
+    position: relative;
+
+    &__logo {
+        background: url('../../img/logo-white.svg') no-repeat;
+        width: 23rem;
+        height: 11rem;
+        position: absolute;
+        top: 8.5rem;
+        left: 4rem;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 60rem;
+        margin: 3rem 0 0 25rem;
+    }
+
+    &__list {
+        font-family: $thrietary-font;
+        font-size: $font-size-xs;
+        color: $color-white;
+        line-height: 1.7;
+        cursor: pointer;
+    }
+
+    &__heading {
+        font-family: $primary-font;
+        font-size: $font-size-normal;
+        color: $color-primary;
+        text-transform: uppercase;
+    }
+
+    &__social {
+        position: absolute;
+        left: 28rem;
+        bottom: 0;
+    }
+
+    &__social-icon {
+        display: inline-block;
+        color: $color-white;
+        font-size: 2rem;
+        padding: .5rem;
+        cursor: pointer;
+    }
+}

@@ -2,7 +2,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 68rem 2rem;
+    margin: 68rem 2rem 10rem 0;
+    position: relative;
+
+    &::after {
+        content: '';
+        background: url('../../img/ico_art.png');
+        background-size: contain;
+        width: 12rem;
+        height: 17rem;
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: -8rem;
+        right: 0;
+    }
 
     &__image {
         width: 35rem;

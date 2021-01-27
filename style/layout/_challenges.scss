@@ -1,23 +1,39 @@
 .challenges {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     font-family: $primary-font;
     position: relative;
+    margin: 8rem 3rem 0 3rem;
 
     &__description {
         width: 30%;
         position: relative;
+
+        &::after {
+            content: '';
+            background: url('../../img/ico_art.png');
+            background-size: contain;
+            width: 13rem;
+            height: 18rem;
+            transform: rotate(-90deg);
+            position: absolute;
+            bottom: 0;
+            right: -18rem;
+            z-index: 1;
+        }
     }
 
     &__results {
-    font-size: $font-size-xxl;
-    font-weight: 600;
-    color: $color-white;
-    text-transform: uppercase;
-    transform: rotate(-90deg);
-    position: absolute;
-    bottom: 0;
-    right: 0;
+        font-size: 12rem;
+        font-weight: 600;
+        color: $color-white;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        white-space: nowrap;
+        position: absolute;
+        top: 32rem;
+        right: -35rem;
     }
 
     &__completed {
@@ -38,6 +54,7 @@
         font-size: $font-size-big;
         font-weight: 600;
         max-width: 30rem;
+        margin: -2rem 0 2rem 0;
     }
 
     &__percent {
@@ -57,7 +74,7 @@
         text-transform: uppercase;
         margin-left: 4rem;
 
-        &::before{
+        &::before {
             content: "+";
             font-family: $primary-font;
             font-size: $font-size-big;
@@ -75,16 +92,14 @@
         background-size: cover;
         background-position: 100%;
         width: 73rem;
-        height: 73rem;
+        height: 78rem;
         position: relative;
         outline: 2rem solid $color-primary;
         outline-offset: -15rem;
     }
 
     &__textbox {
-        position: absolute;
-        top: 30rem;
-        left: 22rem;
+        margin: 25rem 19rem;
 
     }
 
@@ -92,14 +107,18 @@
         font-size: $font-size-big;
         color: $color-white;
         text-transform: uppercase;
-       max-width: 35rem;
+        max-width: 35rem;
     }
 
     &__paragraph {
         font-family: $primary-font;
         font-size: $font-size-normal;
         color: $color-white;
-       max-width: 33rem;
+        max-width: 33rem;
+    }
+
+    &__morebox {
+        margin-top: 3rem;
     }
 
     &__see-more {
@@ -111,7 +130,8 @@
         text-transform: uppercase;
         margin-left: 4rem;
 
-        &::before{
+
+        &::before {
             content: "+";
             font-family: $primary-font;
             font-size: $font-size-big;
@@ -122,5 +142,5 @@
             bottom: -2rem;
             left: 0;
         }
-}
+    }
 }

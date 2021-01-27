@@ -66,20 +66,21 @@
         cursor: pointer;
     }
 
-    &__social-list    {
-            list-style: none;
+    &__social-list {
+        list-style: none;
     }
 
     &__social-list-item {
-                padding: 1rem;
-            }
+        padding: 1rem;
+    }
 
-    &__paragraph {
+    &__text {
         max-width: 23rem;
         margin-top: -18rem;
         line-height: 2;
     }
 }
+
 .pages {
     position: absolute;
     top: 20rem;

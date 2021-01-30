@@ -1,5 +1,5 @@
 .navbar {
-    &__list {
+  &__list {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -11,8 +11,8 @@
     text-transform: uppercase;
 
     li {
-            margin: 1rem;
-            padding: 1rem;
+      margin: 1rem;
+      padding: 1rem;
     }
-}
+  }
 }

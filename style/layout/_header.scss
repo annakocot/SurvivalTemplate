@@ -1,142 +1,142 @@
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 2rem 2rem 10rem 2rem;
+  position: relative;
+
+  &__slide {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 2rem 2rem 10rem 2rem;
+    justify-content: space-between;
+  }
+
+  &__description {
+    display: block;
+    margin: 0 2rem 0 8rem;
     position: relative;
 
-    &__slide {
-        display: flex;
-        justify-content: space-between;
+    &::after {
+      content: '';
+      background-image: url('../../img/ico_art.png');
+      background-size: contain;
+      width: 9rem;
+      height: 13rem;
+      position: absolute;
+      right: 1.5rem;
+      bottom: 1rem;
+      z-index: -1;
     }
 
-    &__description {
-        display: block;
-        margin: 0 2rem 0 8rem;
-        position: relative;
+  }
 
-        &::after {
-            content: '';
-            background-image: url('../../img/ico_art.png');
-            background-size: contain;
-            width: 9rem;
-            height: 13rem;
-            position: absolute;
-            right: 1.5rem;
-            bottom: 1rem;
-            z-index: -1;
-        }
+  &__heading-primary {
+    font-family: $primary-font;
+    color: $color-primary;
+    font-size: $font-size-xl;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 20rem;
+    line-height: .7;
+    margin-top: 7rem;
 
-    }
+  }
 
-    &__heading-primary {
-        font-family: $primary-font;
-        color: $color-primary;
-        font-size: $font-size-xl;
-        font-weight: 500;
-        text-transform: uppercase;
-        word-break: break-all;
-        max-width: 20rem;
-        line-height: .7;
-        margin-top: 7rem;
+  &__heading-secondary {
+    color: $color-black;
+    font-family: $primary-font;
+    font-size: $font-size-big;
+    font-weight: 500;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 19.5rem;
+    left: -19rem;
+  }
 
-    }
+  &__info-box {
+    display: block;
+  }
 
-    &__heading-secondary {
-        color: $color-black;
-        font-family: $primary-font;
-        font-size: $font-size-big;
-        font-weight: 500;
-        transform: rotate(-90deg);
-        position: absolute;
-        top: 19.5rem;
-        left: -19rem;
-    }
+  &__social {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-left: -32rem;
+    margin-top: 3.8rem;
+    cursor: pointer;
+  }
 
-    &__info-box {
-        display: block;
-    }
+  &__social-list {
+    list-style: none;
+  }
 
-    &__social {
-        text-align: center;
-        font-size: 2rem;
-        padding: 1rem;
-        margin-left: -32rem;
-        margin-top: 3.8rem;
-        cursor: pointer;
-    }
+  &__social-list-item {
+    padding: 1rem;
+  }
 
-    &__social-list {
-        list-style: none;
-    }
+  &__text {
+    max-width: 23rem;
+    margin-top: -18rem;
+    line-height: 2;
+  }
 
-    &__social-list-item {
-        padding: 1rem;
-    }
+  &__photo {
+    position: relative;
+    width: 75rem;
+    height: 58rem;
+    background: url('../../img/banner.svg');
+    background-size: cover;
+    margin-right: auto;
+  }
 
-    &__text {
-        max-width: 23rem;
-        margin-top: -18rem;
-        line-height: 2;
-    }
-
-    &__photo {
-        position: relative;
-        width: 75rem;
-        height: 58rem;
-        background: url('../../img/banner.svg');
-        background-size: cover;
-        margin-right: auto;
-    }
-
-    &__pages {
-        position: absolute;
-        top: 20rem;
-        right: -5rem;
-    }
+  &__pages {
+    position: absolute;
+    top: 20rem;
+    right: -5rem;
+  }
 }
 
 .pages {
-    &__list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        text-align: right;
-    }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: right;
+  }
 
-    &__item {
-        margin-bottom: 2rem;
-        font-family: $primary-font;
-        font-size: 1.7rem;
-        font-weight: 600;
-        text-decoration: none;
-        cursor: pointer;
+  &__item {
+    margin-bottom: 2rem;
+    font-family: $primary-font;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
 
-        &--active {
-            border-bottom: .2rem solid $color-primary;
-            font-size: 5rem;
-        }
+    &--active {
+      border-bottom: .2rem solid $color-primary;
+      font-size: 5rem;
     }
+  }
 }
 
 .photo {
-    &__arrows {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
+  &__arrows {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 
-    &__arrow {
-        display: block;
-        font-size: 1.6rem;
-        padding: 1rem;
-        background: #fff;
-        cursor: pointer;
+  &__arrow {
+    display: block;
+    font-size: 1.6rem;
+    padding: 1rem;
+    background: #fff;
+    cursor: pointer;
 
-        &--active {
-            color: #fff;
-            background: $color-primary;
-        }
+    &--active {
+      color: #fff;
+      background: $color-primary;
     }
+  }
 }

@@ -1,24 +1,24 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    &__logo {
-        display: block;
+  &__logo {
+    display: block;
+  }
+
+  &__img {
+    width: 90%;
+  }
+
+  &__nav {
+    a {
+      color: $color-black;
+      text-decoration: none;
     }
 
-    &__img {
-            width: 90%;
-        }
-
-    &__nav {
-        a {
-            color: $color-black;
-            text-decoration: none;
-        }
-
-        #vl {
-            border-left: .2rem solid $color-black;
-            height: 1.8rem;
-        }
+    #vl {
+      border-left: .2rem solid $color-black;
+      height: 1.8rem;
     }
+  }
 }

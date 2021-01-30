@@ -25,6 +25,9 @@
 }
 
 .icon {
+    &--x:before {
+        content: "\e900";
+    }
     &--arrow-right::before {
         content: "\ea3c";
     }

@@ -64,14 +64,6 @@
         margin: 4rem 0;
         max-width: 30rem;
     }
-
-    &__morebox {
-        position: relative;
-    }
-
-    &__more-link {
-        @include more-link-style;
-    }
 }
 
 .image {

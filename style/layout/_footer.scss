@@ -1,6 +1,7 @@
 .footer {
     background: url('../../img/img_footer.svg') no-repeat;
     background-size: cover;
+    background-position: 100% 25%;
     height: 25rem;
     position: relative;
 
@@ -13,11 +14,11 @@
         left: 4rem;
     }
 
-    &__links {
+    &__menu {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        max-width: 60rem;
+        max-width: 55rem;
         margin: 3rem 0 0 25rem;
     }
 

@@ -48,22 +48,6 @@
         margin: 0 4rem 2rem 0;
     }
 
-    &__morebox {
-        position: relative;
-    }
-
-    &__more-link {
-        @include more-link-style;
-        margin-left: 4rem;
-
-        &::before {
-            @include more-symbol;
-            position: absolute;
-            top: -2rem;
-            left: 0;
-        }
-    }
-
     &__pages {
         background: $background-color;
         height: 7rem;

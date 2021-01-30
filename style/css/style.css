@@ -401,6 +401,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon--x:before {
+  content: "\e900";
+}
+
 .icon--arrow-right::before {
   content: "\ea3c";
 }
@@ -438,6 +442,29 @@ p {
   max-width: 116.6rem;
   padding: 0 2rem;
   margin: 0 auto;
+}
+
+.more-link {
+  font-family: "Teko", sans-serif;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 3rem;
+  position: relative;
+}
+
+.more-link--white {
+  color: #fff;
+}
+
+.more-link__icon {
+  color: #E4003B;
+  font-size: 2.5rem;
+  position: absolute;
+  top: -.2rem;
+  left: -3rem;
 }
 
 .navbar__list {
@@ -508,32 +535,6 @@ p {
   margin: 0 4rem 2rem 0;
 }
 
-.advice__morebox {
-  position: relative;
-}
-
-.advice__more-link {
-  font-family: "Teko", sans-serif;
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-left: 4rem;
-}
-
-.advice__more-link::before {
-  content: "+";
-  font-family: "Teko", sans-serif;
-  font-size: 5.5rem;
-  color: #E4003B;
-  display: inline-block;
-  transform: rotate(-45deg);
-  position: absolute;
-  top: -2rem;
-  left: 0;
-}
-
 .advice__pages {
   background: #EDF0F2;
   height: 7rem;
@@ -544,7 +545,7 @@ p {
   right: 0;
 }
 
-.challenges {
+.profile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -553,12 +554,12 @@ p {
   margin: 8rem 3rem 0 3rem;
 }
 
-.challenges__description {
+.profile__description {
   width: 30%;
   position: relative;
 }
 
-.challenges__description::after {
+.profile__description::after {
   content: '';
   background: url("../../img/ico_art.png");
   background-size: contain;
@@ -571,7 +572,7 @@ p {
   z-index: 1;
 }
 
-.challenges__results {
+.profile__results {
   font-size: 12rem;
   font-weight: 600;
   color: #fff;
@@ -583,7 +584,7 @@ p {
   right: -35rem;
 }
 
-.challenges__completed {
+.profile__completed {
   color: #000;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -591,50 +592,24 @@ p {
   margin-top: 20rem;
 }
 
-.challenges__number {
+.profile__number {
   color: #E4003B;
   font-size: 23rem;
   font-weight: 500;
 }
 
-.challenges__survival {
+.profile__survival {
   font-size: 5.5rem;
   font-weight: 600;
   max-width: 30rem;
   margin: -2rem 0 2rem 0;
 }
 
-.challenges__percent {
+.profile__percent {
   color: #E4003B;
 }
 
-.challenges__morebox {
-  position: relative;
-}
-
-.challenges__more-link {
-  font-family: "Teko", sans-serif;
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-left: 4rem;
-}
-
-.challenges__more-link::before {
-  content: "+";
-  font-family: "Teko", sans-serif;
-  font-size: 5.5rem;
-  color: #E4003B;
-  display: inline-block;
-  transform: rotate(-45deg);
-  position: absolute;
-  bottom: -2rem;
-  left: 0;
-}
-
-.challenges__photo {
+.profile__photo {
   background: url("../../img/img_man.svg") no-repeat;
   background-size: cover;
   background-position: 100%;
@@ -645,53 +620,29 @@ p {
   outline-offset: -15rem;
 }
 
-.challenges__textbox {
+.profile__textbox {
   margin: 25rem 19rem;
 }
 
-.challenges__share {
+.profile__share {
   font-size: 5.5rem;
   color: #fff;
   text-transform: uppercase;
   max-width: 35rem;
 }
 
-.challenges__paragraph {
+.profile__paragraph {
   font-family: "Teko", sans-serif;
   font-size: 3.6rem;
   color: #fff;
+  margin: 2rem 0;
   max-width: 33rem;
-}
-
-.challenges__morebox {
-  margin-top: 3rem;
-}
-
-.challenges__more-link-white {
-  font-family: "Teko", sans-serif;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-left: 4rem;
-}
-
-.challenges__more-link-white::before {
-  content: "+";
-  font-family: "Teko", sans-serif;
-  font-size: 5.5rem;
-  color: #E4003B;
-  display: inline-block;
-  transform: rotate(-45deg);
-  position: absolute;
-  bottom: -2rem;
-  left: 0;
 }
 
 .footer {
   background: url("../../img/img_footer.svg") no-repeat;
   background-size: cover;
+  background-position: 100% 25%;
   height: 25rem;
   position: relative;
 }
@@ -705,11 +656,11 @@ p {
   left: 4rem;
 }
 
-.footer__links {
+.footer__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  max-width: 60rem;
+  max-width: 55rem;
   margin: 3rem 0 0 25rem;
 }
 
@@ -808,19 +759,6 @@ p {
   line-height: 2;
   margin: 4rem 0;
   max-width: 30rem;
-}
-
-.gallery__morebox {
-  position: relative;
-}
-
-.gallery__more-link {
-  font-family: "Teko", sans-serif;
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .image {
@@ -1015,19 +953,19 @@ p {
   height: 1.8rem;
 }
 
-.main {
+.challenges {
   display: flex;
   flex-direction: row;
 }
 
-.main__heading {
+.blog__heading {
   font-family: "Teko", sans-serif;
   font-size: 5rem;
   font-weight: 600;
   margin: 4rem 2rem;
 }
 
-.main__posts {
+.blog__post {
   display: flex;
   flex-direction: column;
 }
@@ -1083,32 +1021,6 @@ p {
 .post__paragraph {
   margin: 2rem 0;
   line-height: 2;
-}
-
-.post__morebox {
-  position: relative;
-}
-
-.post__more-link {
-  font-family: "Teko", sans-serif;
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-left: 4rem;
-}
-
-.post__more-link::before {
-  content: "+";
-  font-family: "Teko", sans-serif;
-  font-size: 5.5rem;
-  color: #E4003B;
-  display: inline-block;
-  transform: rotate(-45deg);
-  position: absolute;
-  bottom: -2rem;
-  left: 0;
 }
 
 .mission {
@@ -1180,28 +1092,5 @@ p {
   font-size: 1.2rem;
   line-height: 2;
   margin-bottom: 2rem;
-}
-
-.mission__more-link {
-  font-family: "Teko", sans-serif;
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  margin-left: 4rem;
-}
-
-.mission__more-link::before {
-  content: "+";
-  font-family: "Teko", sans-serif;
-  font-size: 5.5rem;
-  color: #E4003B;
-  display: inline-block;
-  transform: rotate(-45deg);
-  position: absolute;
-  bottom: -2rem;
-  left: 0;
 }
 /*# sourceMappingURL=style.css.map */

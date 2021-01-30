@@ -1,0 +1,22 @@
+.more-link {
+    font-family: $primary-font;
+    color: $color-black;
+    font-size: $font-size-small;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 3rem;
+    position: relative;
+
+    &--white {
+        color: $color-white;
+    }
+
+    &__icon {
+        color: $color-primary;
+        font-size: 2.5rem;
+        position: absolute;
+        top: -.2rem;
+        left: -3rem;
+    }
+}

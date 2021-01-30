@@ -1,131 +1,143 @@
 .challenges {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-family: $primary-font;
-    position: relative;
-    margin: 8rem 3rem 0 3rem;
+}
 
-    &__description {
-        width: 30%;
-        position: relative;
+.blog {
+    &__heading {
+        font-family: $primary-font;
+        font-size: 5rem;
+        font-weight: 600;
+        margin: 4rem 2rem;
+    }
 
-        &::after {
-            content: '';
-            background: url('../../img/ico_art.png');
-            background-size: contain;
-            width: 13rem;
-            height: 18rem;
-            transform: rotate(-90deg);
-            position: absolute;
-            bottom: 0;
-            right: -18rem;
-            z-index: 1;
+    &__post {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+
+    &__image {
+        display: block;
+        width: 30rem;
+        height: 20rem;
+        width: 52rem;
+            height: 20rem;
+            margin: 2rem 2rem 2rem 2rem;
+
+        &--1 {
+            background: url('../../img/fire1.svg') no-repeat;
+            background-size: cover;
+
         }
-    }
 
-    &__results {
-        font-size: 12rem;
-        font-weight: 600;
-        color: $color-white;
-        text-transform: uppercase;
-        transform: rotate(-90deg);
-        white-space: nowrap;
-        position: absolute;
-        top: 32rem;
-        right: -35rem;
-    }
-
-    &__completed {
-        color: $color-black;
-        font-size: $font-size-small;
-        text-transform: uppercase;
-        font-weight: 600;
-        margin-top: 20rem;
-    }
-
-    &__number {
-        color: $color-primary;
-        font-size: 23rem;
-        font-weight: 500;
-    }
-
-    &__survival {
-        font-size: $font-size-big;
-        font-weight: 600;
-        max-width: 30rem;
-        margin: -2rem 0 2rem 0;
-    }
-
-    &__percent {
-        color: $color-primary;
-    }
-
-    &__morebox {
-        position: relative;
-    }
-
-    &__more-link {
-        @include more-link-style;
-        margin-left: 4rem;
-
-        &::before {
-            @include more-symbol;
-            position: absolute;
-            bottom: -2rem;
-            left: 0;
+        &--2 {
+            background: url('../../img/leaf-home.svg') no-repeat;
+            background-size: cover;
         }
-    }
 
-    &__photo {
-        background: url('../../img/img_man.svg') no-repeat;
-        background-size: cover;
-        background-position: 100%;
-        width: 73rem;
-        height: 78rem;
-        position: relative;
-        outline: 2rem solid $color-primary;
-        outline-offset: -15rem;
+        &--3 {
+            background: url('../../img/meal.svg') no-repeat;
+            background-size: cover;
+        }
     }
 
     &__textbox {
-        margin: 25rem 19rem;
-
+        display: block;
+        margin: 2rem 0;
     }
 
-    &__share {
-        font-size: $font-size-big;
-        color: $color-white;
+    &__subheading {
+        color: $color-primary;
+        font-family: $primary-font;
+        font-size: $font-size-small;
         text-transform: uppercase;
-        max-width: 35rem;
+        font-weight: 600;
+        margin: 2rem 0;
+    }
+
+    &__heading {
+        font-size: 3rem;
+        margin: 0;
     }
 
     &__paragraph {
-        font-family: $primary-font;
-        font-size: $font-size-normal;
-        color: $color-white;
-        max-width: 33rem;
+        margin: 2rem 0;
+        line-height: 2;
     }
+}
 
-    &__morebox {
-        margin-top: 3rem;
-    }
+.mission {
+    margin: 2rem;
+    margin-top: 6.5rem;
+    max-width: 40%;
+    position: relative;
 
-    &__more-link-white {
+    &__back-subheading {
         font-family: $primary-font;
         color: $color-white;
-        font-size: $font-size-small;
-        font-weight: 600;
-        text-decoration: none;
+        font-size: $font-size-xxl;
+        font-weight: 500;
         text-transform: uppercase;
-        margin-left: 4rem;
-
+        word-break: break-all;
+        line-height: 0.7;
+        max-width: 40rem;
 
         &::before {
-           @include more-symbol;
+            content: "01";
+            font-family: $primary-font;
+            font-size: 4.8rem;
+            font-weight: 600;
+            color: $color-primary;
+            display: inline-block;
             position: absolute;
-            bottom: -2rem;
-            left: 0;
+            left: -4rem;
+            top: -2rem;
         }
+    }
+
+    &__back-heading {
+        font-family: $secondary-font;
+        color: $color-primary;
+        font-size: 8rem;
+        position: absolute;
+        transform: rotate(-20deg);
+        top: 7rem;
+        right: 5rem;
+    }
+
+    &__img {
+        width: 50rem;
+        position: absolute;
+        top: 12rem;
+        left: -8rem;
+    }
+
+    &__textbox {
+        margin: 27rem 4rem 2rem 4rem;
+        position: relative;
+    }
+
+    &__heading {
+        font-family: $primary-font;
+        font-size: 5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    &__subheading {
+        font-size: 3rem;
+        max-width: 30rem;
+        margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+        font-size: $font-size-xs;
+        line-height: 2;
+        margin-bottom: 2rem;
     }
 }

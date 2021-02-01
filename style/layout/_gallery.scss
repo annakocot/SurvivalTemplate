@@ -6,21 +6,22 @@
   position: relative;
 
   &::after {
-    content: '';
-    background: url('../../img/ico_art.png');
-    background-size: contain;
-    width: 12rem;
-    height: 17rem;
-    transform: rotate(180deg);
     position: absolute;
     bottom: -8rem;
     right: 0;
+    transform: rotate(180deg);
+    width: 12rem;
+    height: 17rem;
+    content: '';
+    background: url('../../img/ico_art.png');
+    background-size: contain;
   }
 
   &__image {
     width: 35rem;
     height: 35rem;
     position: relative;
+    animation: moveInRight 3s;
 
     &--1 {
       background: url('../../img/img_tent.svg') no-repeat;
@@ -32,6 +33,11 @@
       background: url('../../img/img_tea.svg') no-repeat;
       background-size: cover;
       background-position: center;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem rgba($color-black, 0.2);
     }
   }
 
@@ -45,22 +51,21 @@
     font-size: 10rem;
     color: $color-black;
     text-transform: uppercase;
-    margin-left: 1.5rem;
   }
 
   &__heading-secondary {
+    position: absolute;
+    transform: rotate(-15deg);
+    top: 5.5rem;
+    right: 0;
     font-family: $secondary-font;
     font-size: 4.8rem;
+    text-transform: initial;
     color: $color-primary;
-    position: absolute;
-    transform: rotate(-20deg);
-    top: 5rem;
-    right: -2rem;
+
   }
 
   &__description {
-    font-size: $font-size-xs;
-    line-height: 2;
     margin: 4rem 0;
     max-width: 30rem;
   }
@@ -68,32 +73,32 @@
 
 .image {
   position: relative;
+  color: $color-white;
 
   &__social {
-    font-size: 3rem;
-    color: $color-white;
     position: absolute;
     top: 0;
     left: 0;
     padding: 1rem;
+    font-size: $font-size-small;
+    color: inherit;
   }
 
   &__date-stamp {
-    font-size: $font-size-small;
-    font-family: $primary-font;
-    color: $color-white;
-    text-transform: uppercase;
     position: absolute;
     left: 2rem;
     bottom: 8rem;
+    font-weight: 400;
+    color: inherit;
   }
 
   &__description {
-    font-size: 2.8rem;
-    font-family: $primary-font;
-    color: $color-white;
     position: absolute;
+    line-height: 1;
     left: 2rem;
     bottom: 2rem;
+    font-size: 2.8rem;
+    font-family: $primary-font;
+    color: inherit;
   }
 }

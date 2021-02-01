@@ -1,0 +1,27 @@
+.pages {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: right;
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+    font-family: $primary-font;
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &--active {
+      border-bottom: .2rem solid $color-primary;
+      font-size: $font-size-big;
+    }
+
+    &:not(&--active):hover {
+      text-decoration: underline solid $color-primary;
+      transform: scale(1.2) translateX(-0.5rem);
+      transition: scale 0.3s;
+    }
+  }
+}

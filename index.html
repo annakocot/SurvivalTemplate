@@ -16,20 +16,18 @@
 <body>
   <div class="u-container">
     <div class="navbar">
-      <div class="navbar__logo">
-        <img class="navbar__img" src="./img/logo.svg" alt="">
-      </div>
+      <img class="navbar__logo" src="./img/logo.svg" alt="">
       <div class="navbar__nav">
-        <ul class="navbar__list">
-          <li><a href="">our competitors</a></li>
-          <li><a href="">for professionals</a></li>
-          <li><a href="">contact</a></li>
-          <li>
-            <div id="vl"></div>
+        <ul class="navbar__list list">
+          <li class="list__item"><a class="list__link" href="#">our competitors</a></li>
+          <li class="list__item"><a class="list__link" href="#">for professionals</a></li>
+          <li class="list__item"><a class="list__link" href="#">contact</a></li>
+          <li class="list__item">
+            <div class="list__line"></div>
           </li>
-          <li><a href="">eng</a></li>
-          <li><img class="navbar__list-image" src="./img/Login.svg" alt=""></li>
-          <li><img class="navbar__list-image" src="./img/ico_search.svg" alt=""></li>
+          <li class="list__item"><a class="list__link" href="#">eng</a></li>
+          <li class="list__item"><img class="list__image" src="./img/Login.svg" alt=""></li>
+          <li class="list__item"><img class="list__image" src="./img/ico_search.svg" alt=""></li>
         </ul>
       </div>
     </div>
@@ -37,27 +35,37 @@
       <div class="header__slide">
         <div class="header__description">
           <div class="header__heading">
-            <h2 class="header__heading-secondary">Find out if you can</h2>
-            <h1 class="header__heading-primary">survive</h1>
+            <h2 class="header__heading-primary">Find out if you can</h2>
+            <h1 class="header__heading-secondary">survive</h1>
           </div>
           <div class="header__info-box">
-            <div class="header__social">
-              <ul class="header__social-list">
-                <li class="header__social-list-item"><i class="fab fa-facebook-f"></i></li>
-                <li class="header__social-list-item"><i class="fab fa-twitter"></i></li>
-                <li class="header__social-list-item"><i class="fab fa-youtube"></i></li>
-              </ul>
-            </div>
             <p class="header__text">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
               eirmod tempor invidunt ut labor.
             </p>
+            <ul class="header__social social">
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="social__icon fab fa-facebook-f"></span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="social__icon fab fa-twitter"></span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <span class="social__icon fab fa-youtube"></span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="header__photo photo">
-          <div class="photo__arrows">
-            <span class="photo__arrow photo__arrow--active icon icon--arrow-left"></span>
-            <span class="photo__arrow icon icon--arrow-right"></span>
+          <div class="photo__arrows arrows">
+            <span class="arrows__arrow arrows__arrow--active icon icon--arrow-left"></span>
+            <span class="arrows__arrow icon icon--arrow-right"></span>
           </div>
         </div>
       </div>
@@ -77,61 +85,63 @@
             <div class="post__image post__image--1"></div>
             <div class="post__textbox">
               <h6 class="post__subheading">key skills</h6>
-              <h5 class="post__heading">Friction-Based Fire Making</h5>
-              <p class="post__paragraph">Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-                esse
-                quam nihil molestiae
-                consequatur, vel illum qui dolorem.</p>
-              <a class="post__more-link more-link" href="">
-                <i class="more-link__icon icon icon--x"></i> find out more
+              <a class="post_link" href="#">
+                <h5 class="post__heading">Friction-Based Fire Making</h5>
               </a>
+              <p class="post__description">
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                esse quam nihil molestiae consequatur, vel illum qui dolorem.
+              </p>
+              <p class="post__more more more__description">
+              <a class="post__more-link more-link" href="#">
+                <span class="more-link__icon icon icon--x"></span> find out more
+              </a>
+            </p>
             </div>
           </div>
           <div class="blog__post post">
             <div class="post__image post__image--2"></div>
             <div class="post__textbox">
-              <h6 class="post__subheading">
-                key skills
-              </h6>
-              <h5 class="post__heading">
-                Make your own shelter
-              </h5>
-              <p class="post__paragraph">
+              <h6 class="post__subheading">key skills</h6>
+              <a class="post_link" href="#">
+                <h5 class="post__heading">Make your own shelter</h5>
+              </a>
+              <p class="post__description">
                 Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
                 quam nihil molestiae consequatur, vel illum qui dolorem.
               </p>
-              <a class="post__more-link more-link" href="">
-                <i class="more-link__icon icon icon--x"></i> find out more
+              <p class="post__more more more__description">
+              <a class="post__more-link more-link" href="#">
+                <span class="more-link__icon icon icon--x"></span> find out more
               </a>
+              </p>
             </div>
           </div>
           <div class="blog__post post">
             <div class="post__image post__image--3"></div>
             <div class="post__textbox">
-              <h6 class="post__subheading">
-                key skills
-              </h6>
-              <h5 class="post__heading">
-                Prepare a meal in the forest
-              </h5>
-              <p class="post__paragraph">
+              <h6 class="post__subheading">key skills</h6>
+              <a class="post_link" href="#">
+                <h5 class="post__heading"> Prepare a meal in the forest</h5>
+              </a>
+              <p class="post__description">
                 Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
                 quam nihil molestiae consequatur, vel illum qui dolorem.
               </p>
-              <a class="post__more-link more-link" href="">
-                <i class="more-link__icon icon icon--x"></i> find out more
+              <p class="post__more more more__description">
+              <a class="post__more-link more-link" href="#">
+                <span class="more-link__icon icon icon--x"></span> find out more
               </a>
+              </p>
             </div>
           </div>
         </div>
         <div class="challenges__mission mission">
-          <h2 class="mission__back-subheading">
+          <h2 class="mission__hero">
             endurance
+            <span class="mission__hero-subheading">challenges</span>
           </h2>
-          <h3 class="mission__back-heading">
-            challenges
-          </h3>
-          <img class="mission__img" src="./img/shoes.svg" alt="">
+          <img class="mission__image" src="./img/shoes.svg" alt="Tracking shoes">
           <div class="mission__textbox">
             <h4 class="mission__heading">
               Mission
@@ -140,61 +150,61 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
               sed diam nonumy tempor.
             </h5>
-            <p class="mission__paragraph">
+            <p class="mission__description">
               Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
               nihil molestiae consequatur, vel illum qui dolorem.
             </p>
-            <a class="mission__more-link  more-link" href="">
+            <p class="mission__more more more__description">
+            <a class="mission__more-link more-link" href="#">
               <i class="more-link__icon icon icon--x"></i> find out more
             </a>
+            </p>
           </div>
       </section>
       <section class="main__profile profile">
         <div class="profile__description">
           <h2 class="profile__results">Your restults</h2>
-          <h6 class="profile__completed">
-            completed challenges
-          </h6>
-          <h2 class="profile__number">
-            13
-          </h2>
+          <h6 class="profile__completed">completed challenges</h6>
+          <h2 class="profile__number">13</h2>
           <h5 class="profile__survival">
-            You have <span class="challenges__percent">78%</span> chance for survival
+            You have <span class="profile__percent">78%</span> chance for survival
           </h5>
-          <a class="profile__more-link more-link" href="">
+          <p class="profile__more more more__description">
+          <a class="profile__more-link more-link" href="#">
             <i class="more-link__icon icon icon--x"></i> see more
           </a>
+          </p>
         </div>
         <div class="profile__photo">
           <div class="profile__textbox">
-            <h5 class="profile__share">
+            <h4 class="profile__share">
               Share your results on social media
-            </h5>
-            <p class="profile__paragraph">
+            </h4>
+            <h5 class="profile__text">
               Lorem ipsum dolor sit amet, consetetur diam nonumy tempor.
-            </p>
-            <a href="" class="profile__more-link more-link more-link--white">
+            </h5>
+            <p class="profile__more more more__description">
+            <a class="profile__more-link more-link" href="#">
               <i class="more-link__icon icon icon--x"></i> See results from your friends
             </a>
+            </p>
           </div>
         </div>
       </section>
       <section class="main__advice advice">
-        <h3 class="advice__heading">
-          Advice
-        </h3>
+        <h3 class="advice__heading">Advice</h3>
         <div class="advice__photo photo">
           <div class="advice__textbox">
-            <h4 class="advice__subheading">
-              Survival mode
-            </h4>
+            <h4 class="advice__subheading">Survival mode</h4>
             <p class="advice__description">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
               eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
             </p>
-            <a href="#" class="advice__more-link more-link">
+            <p class="advice__more more more__description">
+            <a class="advice__more-link more-link" href="#">
               <i class="more-link__icon icon icon--x"></i> More
             </a>
+            </p>
           </div>
           <div class="advice__pages pages">
             <ul class="pages__list">
@@ -202,27 +212,31 @@
               <li class="pages__item">03</li>
             </ul>
           </div>
-          <div class="photo__arrows">
-            <span class="photo__arrow photo__arrow--active icon icon--arrow-left"></span>
-            <span class="photo__arrow icon icon--arrow-right"></span>
+          <div class="advice__arrows arrows">
+            <span class="arrows__arrow arrows__arrow--active icon icon--arrow-left"></span>
+            <span class="arrows__arrow icon icon--arrow-right"></span>
           </div>
         </div>
       </section>
       <section class="main__gallery gallery">
-        <div class="gallery__image gallery__image--1 image">
-          <i class="image__social fab fa-youtube"></i>
-          <div class="image__date-stamp">06.08.2019. | Shelter making</div>
-          <p class="image__description">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-          </p>
-        </div>
-        <div class="gallery__image gallery__image--2 image">
-          <i class="image__social far fa-images"></i>
-          <div class="image__date-stamp">06.08.2019. | Shelter making</div>
-          <p class="image__description">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-          </p>
-        </div>
+        <a class="gallery__link" href="#">
+          <div class="gallery__image gallery__image--1 image">
+            <span class="image__social fab fa-youtube"></span>
+            <h6 class="image__date-stamp">06.08.2019. | Shelter making</h6>
+            <p class="image__description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            </p>
+          </div>
+        </a>
+        <a class="gallery__link" href="#">
+          <div class="gallery__image gallery__image--2 image">
+            <i class="image__social far fa-images"></i>
+            <h6 class="image__date-stamp">06.08.2019. | Shelter making</h6>
+            <p class="image__description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            </p>
+          </div>
+        </a>
         <div class="gallery__heading">
           <h2 class="gallery__heading-primary">Gallery</h2>
           <h3 class="gallery__heading-secondary">Foto & video</h3>
@@ -230,50 +244,55 @@
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
             diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
           </p>
-          <a href="#" class="gallery__more-link more-link">
+          <p class="post__more more more__description">
+          <a class="gallery__more-link more-link" href="#">
             <i class="more-link__icon icon icon--x"></i>More
           </a>
+          </p>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__logo"></div>
       <div class="footer__menu">
-        <div class="footer__list">
+        <div class="footer__menu-item">
           <h4 class="footer__heading">Challenges</h4>
-          <ul>
-            <li>Endurance</li>
-            <li>Survival</li>
-            <li>Key Skills</li>
-            <li>Survival Kit</li>
-            <li>Shelter making</li>
-            <li>Food challenges</li>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Endurance</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Survival</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Key Skills</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Survival Kit</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Shelter making</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Food challenges</a></li>
           </ul>
         </div>
-        <div class="footer__list">
+        <div class="footer__menu-item">
           <h4 class="footer__heading"> Advices</h4>
-          <ul>
-            <li>Mountain survival</li>
-            <li>Forest challenges</li>
-            <li>How to make your shelter</li>
-            <li>What to eat in forest</li>
-            <li>How to stay safe</li>
-            <li>What to wear</li>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Mountain survival</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Forest challenges</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">How to make your shelter</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">What to eat in forest</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">How to stay safe</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">What to wear</a></li>
           </ul>
         </div>
-        <div class="footer__list">
+        <div class="footer__menu-item">
           <h4 class="footer__heading">Gallery</h4>
-          <ul>
-            <li>Photo gallery</li>
-            <li>Video gallery</li>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Photo gallery</a></li>
+            <li class="footer__list-item"><a class="footer__list-link" href="#">Video gallery</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__social">
         <ul class="footer__social-list">
-          <li class="footer__social-icon"><i class="fab fa-facebook-f"></i></li>
-          <li class="footer__social-icon"><i class="footer__social-icon fab fa-twitter"></i></li>
-          <li class="footer__social-icon"><i class="footer__social-icon fab fa-youtube"></i></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#" target="_blank"><span
+                class="footer__social-icon fab fa-facebook-f"></a></span></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#" target="_blank"><span
+                class="footer__social-icon fab fa-twitter"></span></a></li>
+          <li class="footer__social-item"><a class="footer__social-link" href="#" target="_blank"><span
+                class="footer__social-icon fab fa-youtube"></span></a></li>
         </ul>
       </div>
     </footer>

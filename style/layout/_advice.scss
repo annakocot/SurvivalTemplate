@@ -3,58 +3,51 @@
   position: relative;
 
   &__heading {
-    font-family: $primary-font;
-    font-size: 15rem;
-    font-weight: 500;
-    color: $color-primary;
-    text-transform: uppercase;
-    transform: rotate(-90deg);
     position: absolute;
     top: 20rem;
     left: -10rem;
+    font-size: 15rem;
+    transform: rotate(-90deg);
+    color: $color-primary;
   }
 
   &__photo {
-    background: url('../../img/tentman.svg') no-repeat;
-    background-size: cover;
-    background-position: right bottom;
-    width: 100rem;
-    height: 50rem;
     position: absolute;
     top: 0;
     right: 0;
+    width: 100rem;
+    height: 50rem;
+    background: url('../../img/tentman.svg') no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    animation: moveInLeft 3s;
   }
 
   &__textbox {
-    background: $background-color;
-    max-width: 35rem;
-    height: 20rem;
     position: absolute;
     left: 0;
     bottom: 0;
+    max-width: 35rem;
+    height: 20rem;
+    background: $background-color;
   }
 
   &__subheading {
-    font-family: $primary-font;
-    font-size: $font-size-big;
-    font-weight: 600;
     text-transform: uppercase;
     margin: 2rem 0;
   }
 
   &__description {
-    font-size: $font-size-xs;
-    line-height: 2;
     margin: 0 4rem 2rem 0;
   }
 
   &__pages {
-    background: $background-color;
-    height: 7rem;
-    width: 7rem;
-    padding: 3rem;
     position: absolute;
     top: 0;
     right: 0;
+    height: 7rem;
+    width: 7rem;
+    padding: 3rem;
+    background: $background-color;
   }
 }

@@ -1,17 +1,17 @@
 .footer {
-  background: url('../../img/img_footer.svg') no-repeat;
-  background-size: cover;
-  background-position: 100% 25%;
   height: 25rem;
   position: relative;
+  background: linear-gradient(rgba($color-black, .3), rgba($color-black,.3)), url('../../img/img_footer.svg') no-repeat;
+  background-size: cover;
+  background-position: 100% 25%;
 
   &__logo {
+    position: absolute;
+    top: 8.5rem;
+    left: 2.7rem;
     background: url('../../img/logo-white.svg') no-repeat;
     width: 23rem;
     height: 11rem;
-    position: absolute;
-    top: 8.5rem;
-    left: 4rem;
   }
 
   &__menu {
@@ -22,32 +22,50 @@
     margin: 3rem 0 0 25rem;
   }
 
-  &__list {
-    font-family: $thrietary-font;
-    font-size: $font-size-xs;
+  &__menu-item {
+    font-family: $tertiary-font;
+    font-size: $font-size-xxs;
     color: $color-white;
     line-height: 1.7;
     cursor: pointer;
   }
 
+  &__list-item {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__list-link {
+    color: inherit;
+  }
+
   &__heading {
-    font-family: $primary-font;
-    font-size: $font-size-normal;
+    font-size: $font-size-medium;
     color: $color-primary;
     text-transform: uppercase;
   }
 
   &__social {
     position: absolute;
-    left: 28rem;
+    left: 26rem;
     bottom: 0;
+  }
+
+  &__social-list {
+    display: flex;
+    flex-direction: row;
   }
 
   &__social-icon {
     display: inline-block;
     color: $color-white;
     font-size: 2rem;
-    padding: .5rem;
-    cursor: pointer;
+    padding: 1rem;
+
+    &:hover {
+      transform: scale(1.5);
+      transition: all 0.3s;
+    }
   }
 }

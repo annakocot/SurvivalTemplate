@@ -9,6 +9,7 @@
   &__description {
     width: 30%;
     position: relative;
+    animation: moveInUp 2s;
 
     &::after {
       content: '';
@@ -25,23 +26,20 @@
   }
 
   &__results {
+    position: absolute;
+    top: 32rem;
+    right: -35rem;
     font-size: 12rem;
     font-weight: 600;
     color: $color-white;
     text-transform: uppercase;
     transform: rotate(-90deg);
     white-space: nowrap;
-    position: absolute;
-    top: 32rem;
-    right: -35rem;
   }
 
   &__completed {
-    color: $color-black;
-    font-size: $font-size-small;
-    text-transform: uppercase;
-    font-weight: 600;
     margin-top: 20rem;
+    color: $color-black;
   }
 
   &__number {
@@ -51,10 +49,10 @@
   }
 
   &__survival {
+    max-width: 25rem;
+    margin: -2rem 0 2rem 0;
     font-size: $font-size-big;
     font-weight: 600;
-    max-width: 30rem;
-    margin: -2rem 0 2rem 0;
   }
 
   &__percent {
@@ -62,33 +60,37 @@
   }
 
   &__photo {
-    background: url('../../img/img_man.svg') no-repeat;
-    background-size: cover;
-    background-position: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 73rem;
     height: 78rem;
-    position: relative;
-    outline: 2rem solid $color-primary;
-    outline-offset: -15rem;
+    background: url('../../img/img_man.svg') no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
   }
 
   &__textbox {
-    margin: 25rem 19rem;
+    padding: 20rem .5rem 3rem 2rem;
+    width: 33rem;
+    color: $color-white;
+    outline: 2rem solid $color-primary;
 
+    &:hover {
+      outline: 2rem solid $color-primary;
+      outline-offset: 1rem;
+    }
   }
 
   &__share {
-    font-size: $font-size-big;
-    color: $color-white;
     text-transform: uppercase;
-    max-width: 35rem;
+    font-weight: 500;
+    color: inherit;
   }
 
-  &__paragraph {
-    font-family: $primary-font;
-    font-size: $font-size-normal;
-    color: $color-white;
-    margin: 2rem 0;
-    max-width: 33rem;
+  &__text {
+    font-size: $font-size-medium;
+    margin: 2.5rem 0 3rem 0;
+    color: inherit;
   }
 }

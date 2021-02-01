@@ -1,0 +1,35 @@
+.more-link {
+  position: relative;
+  margin-left: 3rem;
+  font-family: $primary-font;
+  font-size: $font-size-xs;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: inherit;
+
+  &__icon {
+    position: absolute;
+    top: -0.2rem;
+    left: -3rem;
+    font-size: 2.5rem;
+    color: $color-primary;
+  }
+
+  &:hover {
+    transform: scale(1.3);
+  }
+
+  &:hover &__icon {
+    transform: scale(1.3);
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out 0s;
+  }
+}
+
+.more {
+  &__description {
+    &:hover {
+      transform: scale(1.1) translateX(1rem);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 @import 'base/reset';
 
+@import 'base/animations';
 @import 'base/base';
 @import 'base/colors';
 @import 'base/fonts';
@@ -7,8 +8,9 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/buttons';
-@import 'components/lists';
+@import 'components/more';
+@import 'components/arrows';
+@import 'components/pages';
 
 @import 'layout/advice';
 @import 'layout/profile';

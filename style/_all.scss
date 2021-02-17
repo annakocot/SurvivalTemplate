@@ -1,14 +1,22 @@
 @import 'base/reset';
 
+@import 'base/breakpoints';
+@import 'base/animations';
 @import 'base/base';
 @import 'base/colors';
 @import 'base/fonts';
-@import 'base/main';
 @import 'base/icons';
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/lists';
+@import 'components/more';
+@import 'components/arrows';
+@import 'components/pages';
 
+@import 'layout/advice';
+@import 'layout/profile';
+@import 'layout/footer';
+@import 'layout/gallery';
 @import 'layout/header';
 @import 'layout/nav';
+@import 'layout/challenges';

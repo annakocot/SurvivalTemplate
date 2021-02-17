@@ -1,39 +1,61 @@
-// h1{
-//     font-family: $primary-font;
-//     color: $color-primary;
-//     text-transform: uppercase;
-//     font-size: $font-size-xxl;
-//     line-height: 0.8;
-//     font-weight: 500;
-// }
-
-// h2{
-//     font-family: $primary-font;
-//     font-size: $font-size-large;
-// }
-
-h3{
-    font-family: $secondary-font;
-    font-size: $font-size-medium;
+h1 {
+  font-family: $primary-font;
+  font-size: 17.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $color-primary;
 }
 
-h4{
+h2 {
+  font-family: $primary-font;
+  font-size: $font-size-xl;
+  font-weight: 500;
+  color: $color-black;
+}
+
+h3 {
+  font-family: $primary-font;
+  font-size: $font-size-large;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $color-black;
+}
+
+h4 {
+  font-family: $primary-font;
+  font-size: $font-size-big;
+  font-weight: 600;
+  color: $color-black;
+}
+
+h5 {
+  font-family: $primary-font;
+  font-size: $font-size-small;
+  font-weight: 500;
+  color: $color-black;
+}
+
+h6 {
+    color: $color-primary;
     font-family: $primary-font;
-    font-size: $font-size-big;
-}
-
-h5{
-    font-family: $primary-font;
-    font-size: $font-size-normal;
-    font-weight: 500;
-}
-
-h6{
-    font-family: $primary-font;
-    font-size: $font-size-small;
-}
-
-p{
-    font-family: $thrietary-font;
     font-size: $font-size-xs;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+  font-family: $tertiary-font;
+  font-size: $font-size-xxs;
+  line-height: 2;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
 }

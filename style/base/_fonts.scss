@@ -1,14 +1,23 @@
 $primary-font: 'Teko', sans-serif;
 $secondary-font: 'Adevale', sans-serif;
-$thrietary-font: 'Roboto', sans-serif;
+$tertiary-font: 'Roboto', sans-serif;
 
 $font-size-xxl: 16rem;
-$font-size-xl: 17.4rem;
-$font-size-large: 9.6rem;
-$font-size-big: 5.3rem;
-$font-size-medium: 5.5rem;
-$font-size-normal: 3.6rem;
+$font-size-xl: 12rem;
+$font-size-large: 5.5rem;
+$font-size-big: 5rem;
+$font-size-medium: 3.6rem;
+$font-size-small: 3rem;
+$font-size-xs: 1.5rem;
+$font-size-xxs: 1.2rem;
 
-
-$font-size-small: 1.5rem;
-$font-size-xs: 1.2rem;
+@font-face {
+  font-family: 'Adevale';
+  src:
+    url('../../assets/fonts/Adevale.ttf') format('truetype'),
+    url('../../assets/fonts/adevale-regular-webfont.woff') format('woff'),
+    url('../../assets/fonts/Adevale.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

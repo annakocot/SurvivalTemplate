@@ -1,0 +1,53 @@
+.advice {
+  margin: 8rem 2rem;
+  position: relative;
+
+  &__heading {
+    position: absolute;
+    top: 20rem;
+    left: -10rem;
+    font-size: 15rem;
+    transform: rotate(-90deg);
+    color: $color-primary;
+  }
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100rem;
+    height: 50rem;
+    background: url('../../img/tentman.svg') no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    animation: moveInLeft 3s;
+  }
+
+  &__textbox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 35rem;
+    height: 20rem;
+    background: $background-color;
+  }
+
+  &__subheading {
+    text-transform: uppercase;
+    margin: 2rem 0;
+  }
+
+  &__description {
+    margin: 0 4rem 2rem 0;
+  }
+
+  &__pages {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 7rem;
+    width: 7rem;
+    padding: 3rem;
+    background: $background-color;
+  }
+}

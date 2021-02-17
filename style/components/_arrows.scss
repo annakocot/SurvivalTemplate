@@ -1,0 +1,25 @@
+.arrows {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+&__arrow {
+  display: block;
+  font-size: 1.6rem;
+  padding: 1rem;
+  background: $background-color;
+  cursor: pointer;
+
+  &--active {
+    color: $color-white;
+    background: $color-primary;
+  }
+
+  &:hover {
+    color: $color-primary;
+    background: $color-white;
+    box-shadow: 0.2rem 0 0.2rem 0.1rem rgba($color-black, 0.2);
+    transition: all 0.3s ease-in 0s;
+  }
+}
+}

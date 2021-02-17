@@ -1,0 +1,220 @@
+.footer {
+  width: 56rem;
+  height: 50rem;
+  position: relative;
+  background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)), url('../../img/img_footer.svg') no-repeat;
+  background-size: cover;
+  background-position: 100% 25%;
+
+  @include media-breakpoint-up(landscapePhone) {
+    height: 56rem;
+    width: 56rem;
+  }
+
+  @include media-breakpoint-up(phablet) {
+    width: 58rem;
+    height: 56rem;
+  }
+
+  @include media-breakpoint-up(laptop) {
+    width: 61rem;
+    height: 56rem;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    width: 71rem;
+    height: 56rem;
+  }
+
+  @include media-breakpoint-up(hdDesktop) {
+    width: 82rem;
+    height: 30rem;
+  }
+
+  @include media-breakpoint-up(fhdDesktop) {
+    width: 160rem;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: 18rem;
+    height: 9rem;
+    background: url('../../img/logo-white.svg') no-repeat;
+    background-size: contain;
+
+    @include media-breakpoint-up(landscapePhone) {
+      width: 20rem;
+      height: 10rem;
+      top: 5rem;
+      left: 5rem;
+    }
+
+    @include media-breakpoint-up(phablet) {
+      width: 22rem;
+      height: 11rem;
+      top: 6rem;
+      left: 4rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      top: 8.5rem;
+      left: 4rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      width: 26rem;
+      height: 13rem;
+      top: 8.5rem;
+      left: 5rem;
+    }
+
+    @include media-breakpoint-up(hdDesktop) {
+      width: 16rem;
+      height: 8rem;
+      top: 8.5rem;
+      left: 2.7rem;
+    }
+
+    @include media-breakpoint-up(fhdDesktop) {
+      width: 28rem;
+      height: 14rem;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rem;
+
+    @include media-breakpoint-up(landscapePhone) {
+      margin-left: 32rem;
+      max-width: 85rem;
+    }
+
+    @include media-breakpoint-up(phablet) {
+      padding-top: 2rem;
+      margin-left: 32rem;
+      max-width: 85rem;
+    }
+
+    @include media-breakpoint-up(lacapndseTablet) {
+      max-width: 94rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      padding-top: 2rem;
+      margin-left: 40rem;
+    }
+
+    @include media-breakpoint-up(hdDesktop) {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-left: 20rem;
+    }
+
+    @include media-breakpoint-up(fhdDesktop) {
+      margin-left: 29rem;
+      max-width: 80rem;
+    }
+  }
+
+  &__menu-item {
+    font-family: $tertiary-font;
+    font-size: $font-size-xxs;
+    color: $color-white;
+    line-height: 1.7;
+
+    @include media-breakpoint-up(landscapePhone) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__list-item {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__list-link {
+    color: inherit;
+  }
+
+  &__heading {
+    font-size: $font-size-medium;
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
+  &__social {
+    position: absolute;
+    left: 7rem;
+    top: 15rem;
+
+    @include media-breakpoint-up(landscapePhone) {
+      left: 10rem;
+      top: 18rem;
+    }
+
+    @include media-breakpoint-up(phablet) {
+      left: 11rem;
+      top: 18rem;
+    }
+
+    @include media-breakpoint-up(portraitTablet) {
+      left: 11rem;
+      top: 18rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      left: 10rem;
+      top: 22rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      left: 10rem;
+      top: 22rem;
+    }
+
+    @include media-breakpoint-up(hdDesktop) {
+      top: 24rem;
+      left: 21rem;
+    }
+
+    @include media-breakpoint-up(fhdDesktop) {
+      left: 34rem;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include media-breakpoint-up(desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__social-icon {
+    display: inline-block;
+    color: $color-white;
+    font-size: 5rem;
+    padding: 2rem;
+
+    @include media-breakpoint-up(landscapePhone) {
+      font-size: 5rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      font-size: 3rem;
+      padding: 1.5rem;
+    }
+
+    &:hover {
+      transform: scale(1.5);
+      transition: all 0.3s;
+    }
+  }
+}

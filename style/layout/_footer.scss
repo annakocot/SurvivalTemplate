@@ -6,35 +6,18 @@
   background-size: cover;
   background-position: 65% 45%;
   padding: 2rem;
-  width: 36rem;
-
-  @include media-breakpoint-up(landscapePhone) {
-    width: 44rem;
-  }
-
-  @include media-breakpoint-up(phablet) {
-    width: 56rem;
-  }
-
-  @include media-breakpoint-up(portraitTablet) {
-    width: 72.8rem;
-  }
-
-  @include media-breakpoint-up(landscapeTablet) {
-    width: 80rem;
-  }
+  width: 97rem;
 
   @include media-breakpoint-up(laptop) {
-    width: 102rem;
     background-position: 65% 30%;
   }
 
   @include media-breakpoint-up(desktop) {
-    width: 124rem;
+    width: 122rem;
   }
 
   @include media-breakpoint-up(hdDesktop) {
-    width: 136rem;
+    width: 138rem;
   }
 
   @include media-breakpoint-up(fhdDesktop) {

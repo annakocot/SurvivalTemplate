@@ -847,49 +847,24 @@ h6 {
   background-size: cover;
   background-position: 65% 45%;
   padding: 2rem;
-  width: 36rem;
-}
-
-@media (min-width: 480px) {
-  .footer {
-    width: 44rem;
-  }
-}
-
-@media (min-width: 600px) {
-  .footer {
-    width: 56rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer {
-    width: 72.8rem;
-  }
-}
-
-@media (min-width: 840px) {
-  .footer {
-    width: 80rem;
-  }
+  width: 97rem;
 }
 
 @media (min-width: 1024px) {
   .footer {
-    width: 102rem;
     background-position: 65% 30%;
   }
 }
 
 @media (min-width: 1280px) {
   .footer {
-    width: 124rem;
+    width: 122rem;
   }
 }
 
 @media (min-width: 1366px) {
   .footer {
-    width: 136rem;
+    width: 138rem;
   }
 }
 

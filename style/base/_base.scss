@@ -8,3 +8,15 @@ html{
 body{
     background-color: $background-color;
 }
+
+p {
+    font-family: $tertiary-font;
+    font-size: $font-size-xxs;
+    line-height: 2;
+    color: inherit;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }

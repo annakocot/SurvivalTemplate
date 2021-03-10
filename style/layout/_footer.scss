@@ -1,22 +1,45 @@
 .footer {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)), url('../../img/img_footer.svg') no-repeat;
+  background: linear-gradient(rgba($color-black, .3), rgba($color-black, .3)),
+    url('../../img/img_footer.svg') no-repeat;
   background-size: cover;
-  background-position: 100% 25%;
+  background-position: 65% 45%;
   padding: 2rem;
+  width: 36rem;
 
-  @include media-breakpoint-up(landscapePhone) {}
+  @include media-breakpoint-up(landscapePhone) {
+    width: 44rem;
+  }
 
-  @include media-breakpoint-up(phablet) {}
+  @include media-breakpoint-up(phablet) {
+    width: 56rem;
+  }
 
-  @include media-breakpoint-up(laptop) {}
+  @include media-breakpoint-up(portraitTablet) {
+    width: 72.8rem;
+  }
 
-  @include media-breakpoint-up(desktop) {}
+  @include media-breakpoint-up(landscapeTablet) {
+    width: 80rem;
+  }
 
-  @include media-breakpoint-up(hdDesktop) {}
+  @include media-breakpoint-up(laptop) {
+    width: 102rem;
+    background-position: 65% 30%;
+  }
 
-  @include media-breakpoint-up(fhdDesktop) {}
+  @include media-breakpoint-up(desktop) {
+    width: 124rem;
+  }
+
+  @include media-breakpoint-up(hdDesktop) {
+    width: 136rem;
+  }
+
+  @include media-breakpoint-up(fhdDesktop) {
+    width: 184rem;
+  }
 
   &__logo-wrapper {
     display: flex;
@@ -27,26 +50,33 @@
 
   &__logo {
     width: 18rem;
+    margin: 2rem 0;
   }
 
   &__social {
     width: 100%;
-    padding-left: 30rem;
+    padding-left: 3rem;
     margin-top: 4rem;
+
+    @include media-breakpoint-up(portraitTablet) {
+      padding-left: 8rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      order: 3;
+      padding-left: 30rem;
+    }
   }
 
   &__social-list {
     display: flex;
-    text-align: center;
-
-    @include media-breakpoint-up(desktop) {
-      flex-direction: row;
-    }
+    flex-direction: row;
   }
 
   &__social-item {
     & + & {
-    margin-left: 2rem;
+      margin: 0;
+      margin-left: 2rem;
     }
   }
 
@@ -60,6 +90,24 @@
       transition: all 0.3s;
     }
   }
+
+  &__menu {
+    @include media-breakpoint-up(portraitTablet) {
+      order: 3;
+      margin-top: -16rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      display: flex;
+      flex-direction: row;
+      margin-left: 30rem;
+    }
+
+    @include media-breakpoint-up(fhdDesktop){
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
 }
 
 .footer-box {
@@ -67,12 +115,30 @@
   font-size: $font-size-xxs;
   color: $color-white;
   line-height: 1.7;
+  margin-left: 3rem;
+  width: 27rem;
 
-  width: 18rem;
 
- & + & {
-    margin-left: 12rem;
- }
+  @include media-breakpoint-up(portraitTablet) {
+    margin-left: 30rem;
+    width: 30rem;
+    order: 3;
+  }
+  @include media-breakpoint-up(laptop) {
+    margin: 0;
+    width: 17rem;
+    margin-top: 3rem;
+  }
+
+  @include media-breakpoint-up(laptop) {
+    & + & {
+      margin-left: 7rem;
+
+      @include media-breakpoint-up(desktop) {
+        margin-left: 16rem;
+      }
+    }
+  }
 
   @include media-breakpoint-up(landscapePhone) {
     font-size: 1.5rem;
